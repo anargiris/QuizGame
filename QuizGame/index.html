@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div id="leaderboards">
+        <ul id='scorelist'></ul>
+        <button id="homeback">Back</button>
+    </div>
+
+
+    <div class="start-screen">
+        <h1 id='quiz-opener'>Quiz Game!</h1>
+        <h2>Rules:</h2>
+        <p>You get to answer 12 questions which are divided in:<br>
+            4 <span id='easy'>Easy</span> Questions, each one gives 1 point.<br>
+            4 <span id='medium'>Medium</span> Questions, each one gives 2 points.<br>
+            4  <span id='hard'>Hard</span> Questions, each one gives 3 points   .<br>
+        </p>
+        <br><br>
+        <p>Simple as that! Do your <b>best</b>.</p>
+        <button class='button' id="btn-start">Start!</button>
+        <button id="scores">Scores</button>
+    </div>
+
+    <div class="question" >
+                <div class="img-div">
+                    <img id='img-place' src="" alt="">
+                </div>
+                <div class="quest-div" id="question-space">
+                    <div class="score">
+                        <h3 class="player-scored">Score: <span id='player-score'>0</span></h3>
+                        <div id='timer-stuff'><span id='timer'></span></div>
+                    </div>
+                    <div class="question-div">
+                        <h2 id="question-text">Question 1:</h2>
+                    </div>
+                    
+                </div>
+    </div>
+
+    <div class="answers">
+        <div class="answer"><button class="btn" id="btn-a">A</button></div>
+        <div class="answer"><button class="btn" id="btn-b" >B</button></div>
+        <div class="answer"><button class="btn" id="btn-c" >C</button></div>
+        <div class="answer"><button class="btn" id="btn-d" >D</button></div>
+    </div>
+
+
+
+    <div id="end-screen">
+        <h1>Your score was: <span id='player-score-end'></span></h1>
+        <input type="text" id="name-input" maxlength="10" minlength="1">
+        <button id="submit-btn">SUBMIT</button>
+    </div>
+</div>
+
+
+    <script src="app.js"></script>
+    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCtFN3khz9TXpLKQqzLs9LDndmBupGtjUY",
+    authDomain: "quiz-game-e7e43.firebaseapp.com",
+    databaseURL: "https://quiz-game-e7e43.firebaseio.com",
+    projectId: "quiz-game-e7e43",
+    storageBucket: "quiz-game-e7e43.appspot.com",
+    messagingSenderId: "341984603024",
+    appId: "1:341984603024:web:df224e05b95f7368112115"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="firebase.js"></script>
+</body>
+</html>

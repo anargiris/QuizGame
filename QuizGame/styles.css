@@ -1,0 +1,228 @@
+/* Colors Pallete:
+Rich Black FOGRA: #011627
+Baby Powder: #FDFFFC
+Tiffany Blue: #2EC4B6
+Rose Madder: #E71D36
+Orange Peel: #FF9F1C
+*/
+
+
+
+body {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-image: url(imgs/BACK.jpg);
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    font-size: 15px;
+    color: #011627;
+    font-weight: 500;
+    
+}
+
+#quiz-opener{
+    border-bottom: 3px solid #011627;
+    display: inline-block;
+}
+.start-screen {
+    text-align:center;
+    font-size: 24px;
+}
+
+#easy {
+    color:#698F3F;
+}
+#medium {
+    color: #FF9F1C;
+}
+#hard {
+    color: #E71D36;
+}
+#btn-start {
+    cursor: pointer;
+    background-color: #FF9F1C;
+    height:75px;
+    width: 100px;
+    padding: 12px;
+    border: 4px solid #011627;
+    border-radius: 10px;
+    color: #E71D36;
+    font-size:22px;
+    font-weight: 800;
+}
+
+.container {
+    width: 80%;
+    height:80vh;
+    margin: auto;
+    border: 4px solid #011627;
+    border-radius: 15px;
+    margin-top: 50px;
+    background-color: #F4F4F2;
+    box-shadow: 1px 1px 5px #011627;
+    display: flex;
+    flex-direction: column;
+}
+
+.question {
+
+    display: none;
+    flex: 1.5;
+    border-bottom: 3px solid #011627;
+}
+
+.answers {
+    width:100%;
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex:1;
+    justify-content: space-around;
+    align-items: center;
+       
+    background-color: #e8e8e8;
+}
+
+.answer {
+    width: 600px;
+    height: 100px;
+}
+
+.answer > button {
+    width:90%;
+    height: 100px;
+    font-size: 26px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 5px solid #2EC4B6;
+    box-shadow: 3px 1px 10px #011627;
+    background-color:#011627;
+    color: #FDFFFC;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    transform: scale(0.9)
+}
+button:hover {
+    border: 5px solid #FF9F1C;
+    box-shadow: 2px 2px 15px #011627;
+}
+
+.img-div {
+    flex:1;
+    padding:10px;
+    max-width:80%;
+    max-height: 500px;
+    align-items: center;
+    justify-content: center;
+}
+
+#img-place {
+    margin-top: 20px;
+    max-width:100%;
+    max-height: 100%;
+    display: block;
+    border-radius: 20px;
+    border: 2px solid  #011627;
+}
+.quest-div {
+    flex: 2;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+}
+#question-text {
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    width: 80%;
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+.player-scored {
+    font-size: 20px;
+}
+.question-div {
+    position: absolute;
+    top: 150px;
+    width: 900px;
+    right: 200px;
+}
+
+#end-screen {
+    display: none;
+    text-align: center;
+    font-size: 40px;
+}
+#scores {
+    position:absolute;
+    right: 260px;
+    bottom: 200px;
+    padding: 20px;
+    padding: 20px;
+    font-size : 30px;
+    border: 5px solid #011627;
+    border-radius: 15px;
+}
+
+#leaderboards {
+    display: none;
+    font-size: 40px;
+    max-height: 500px;
+}
+#scorelist {
+    width: 80%;
+    height: 600px;
+    list-style-type: none;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+#scorelist > li {
+    display: inline-block;
+    width: 40%;
+    font-size: 32px;
+}
+#rank {
+    font-size:45px;
+    color: #E71D36;
+    font-style: italic;
+}
+#homeback {
+    position: fixed;
+    bottom: 200px;
+    right: 250px;
+    padding: 20px;
+    font-size : 30px;
+    border: 5px solid #011627;
+    border-radius: 15px;
+}
+#player-name {
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 37px;
+}
+#submit-btn {
+    background-color: #e8e8e8;
+    position: fixed;
+    margin:auto;
+    bottom: 530px;
+    right: 880px;
+    padding: 20px;
+    font-size : 30px;
+    border: 5px solid #011627;
+    border-radius: 15px;
+    font-family: 'Hind Madurai', sans-serif;
+}
+#timer-stuff {
+    width: 25px;
+    height: 25px;
+    margin:auto;
+    font-size: 20px;
+    padding: 13px;
+}
